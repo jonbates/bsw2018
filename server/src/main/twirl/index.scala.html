@@ -1,0 +1,18 @@
+@(trackingId: String)
+
+<!DOCTYPE html>
+
+<html>
+  @head("BSW Scala-js Demo", trackingId)
+  <body>
+    <div id="root"></div>
+
+    <script src="http://localhost:8081/client-fastopt-library.js"></script>
+    <script language="JavaScript">
+      var exports = window;
+      exports.require = window["ScalaJSBundlerLibrary"].require;
+    </script>
+    <script src="http://localhost:8081/client-fastopt.js"></script>
+  
+  </body>
+</html>
