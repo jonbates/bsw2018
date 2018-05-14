@@ -1,8 +1,8 @@
 lazy val commonSettings = Seq(
   scalaVersion := scalaV,
   // If not using ensime comment out these two
-  ensimeScalaVersion in ThisBuild := scalaV,
-  ensimeIgnoreMissingDirectories in ThisBuild := true,
+  //ensimeScalaVersion in ThisBuild := scalaV,
+  //ensimeIgnoreMissingDirectories in ThisBuild := true,
   scalacOptions in ThisBuild ++= Seq("-Ypartial-unification", "-deprecation", "-feature"))
 
 val scalaV = "2.12.6"
